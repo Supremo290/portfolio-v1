@@ -36,7 +36,7 @@ function Navbar() {
 
   return (
     <motion.header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 outline-none ${
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 outline-none border-none shadow-none ${
         scrolled ? "navbar-scrolled" : "bg-transparent"
       }`}
       initial={{ y: -80 }}
