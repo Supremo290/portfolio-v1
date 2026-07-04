@@ -46,6 +46,28 @@ body {
   -webkit-backdrop-filter: blur(16px);
 }
 
+/* Navbar scrolled state - dark navy glass with soft blue glow only, no white edges */
+.navbar-scrolled {
+  background: rgba(2, 6, 23, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(96, 165, 250, 0.08);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.08);
+  outline: none;
+}
+
+/* Premium gradient logo text */
+.logo-gradient {
+  background: linear-gradient(90deg, #60a5fa, #a855f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(96, 165, 250, 0.35), 0 0 24px rgba(168, 85, 247, 0.25);
+}
+
 /* Glow blob */
 .glow-blob {
   position: absolute;

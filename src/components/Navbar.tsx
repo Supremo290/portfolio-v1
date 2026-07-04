@@ -36,8 +36,8 @@ function Navbar() {
 
   return (
     <motion.header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass-card shadow-lg" : "bg-transparent"
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 outline-none ${
+        scrolled ? "navbar-scrolled" : "bg-transparent"
       }`}
       initial={{ y: -80 }}
       animate={{ y: 0 }}
@@ -46,7 +46,7 @@ function Navbar() {
       <nav className="container-page flex items-center justify-between py-4">
         <a
           href="#home"
-          className="text-lg font-extrabold tracking-[0.15em] text-white text-glow-soft"
+          className="text-lg font-extrabold tracking-[0.15em] logo-gradient"
         >
           SUPREMO
         </a>
