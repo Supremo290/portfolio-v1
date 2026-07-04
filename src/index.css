@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #020617;
+  --color-navy-900: #0b1120;
+  --color-navy-800: #0f172a;
+  --color-primary-900: #1e3a8a;
+  --color-primary-600: #2563eb;
+  --color-glow-400: #60a5fa;
+  --color-glow-300: #93c5fd;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-navy-950);
+  color: #e2e8f0;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Grid background overlay - kept subtle so it reads as texture, not a visible grid */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(96, 165, 250, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(96, 165, 250, 0.035) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 80% 60% at 60% 20%, black 40%, transparent 85%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 60% 20%, black 40%, transparent 85%);
+}
+
+/* Shared page container so the navbar and hero align on the same edges */
+.container-page {
+  width: min(1400px, 90%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Glassmorphism card */
+.glass-card {
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(96, 165, 250, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Glow blob */
+.glow-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  pointer-events: none;
+}
+
+/* Neon glow shadow utilities */
+.shadow-glow {
+  box-shadow: 0 0 25px rgba(96, 165, 250, 0.35);
+}
+.shadow-glow-lg {
+  box-shadow: 0 0 40px rgba(96, 165, 250, 0.55);
+}
+
+/* Soft neon text glow */
+.text-glow {
+  text-shadow: 0 0 18px rgba(96, 165, 250, 0.5), 0 0 40px rgba(147, 51, 234, 0.25);
+}
+.text-glow-soft {
+  text-shadow: 0 0 12px rgba(96, 165, 250, 0.35);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-navy-950);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-600);
+  border-radius: 8px;
+}
+
+/* Nav link underline animation */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary-600), var(--color-glow-400));
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+.cursor-blink {
+  animation: blink 1s step-start infinite;
+}
