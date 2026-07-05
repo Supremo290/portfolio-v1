@@ -6,9 +6,10 @@ interface ButtonProps {
   href: string;
   variant?: "primary" | "outline";
   icon?: ReactNode;
+  download?: boolean;
 }
 
-function Button({ children, href, variant = "primary", icon }: ButtonProps) {
+function Button({ children, href, variant = "primary", icon, download }: ButtonProps) {
   const baseClasses =
     "inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all duration-300";
 
@@ -20,6 +21,7 @@ function Button({ children, href, variant = "primary", icon }: ButtonProps) {
   return (
     <motion.a
       href={href}
+      download={download}
       className={`${baseClasses} ${variantClasses}`}
       whileHover={{ scale: 1.06 }}
       whileTap={{ scale: 0.97 }}
