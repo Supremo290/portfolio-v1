@@ -60,25 +60,8 @@ function About() {
 
             <div className="space-y-4 text-slate-300 leading-relaxed">
               <p>
-                I am Robbie Fuggan, an aspiring Data Analyst and AI Engineer
-                with a strong passion for turning data into meaningful
-                insights that help drive better decisions. I enjoy working
-                with SQL, Python, Excel, Power BI, and modern data analytics
-                tools to clean, analyze, and visualize data.
-              </p>
-              <p>
-                I am continuously learning and building hands-on projects to
-                strengthen my analytical and problem-solving skills while
-                preparing for an entry-level career in Data Analytics and
-                Artificial Intelligence.
-              </p>
-              <p>
-                Although I have experience in frontend development, my career
-                focus is now centered on Data Analytics, Business
-                Intelligence, and AI. I am committed to continuous learning
-                and applying data-driven solutions to solve real-world
-                problems.
-              </p>
+I am Robbie Fuggan, an aspiring Data Analyst and AI Engineer passionate about transforming data into meaningful insights. I continuously build hands-on projects using SQL, Python, Excel, and Power BI while expanding my skills in data analytics, business intelligence, and AI to solve real-world problems.
+              </p>             
             </div>
 
             <div className="glass-card rounded-xl p-5 mt-6 flex items-start gap-3">
