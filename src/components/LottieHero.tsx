@@ -5,7 +5,7 @@ import developerAnimation from "../assets/developer-animation.json";
 function LottieHero() {
   return (
     <motion.div
-      className="relative flex items-center justify-center w-full max-w-lg md:max-w-3xl mx-auto"
+      className="relative flex items-center justify-center w-full max-w-xl md:max-w-4xl mx-auto md:translate-x-6 lg:translate-x-10"
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
@@ -15,7 +15,7 @@ function LottieHero() {
         animationData={developerAnimation}
         loop
         autoplay
-        className="relative w-full max-w-md md:max-w-2xl drop-shadow-[0_0_40px_rgba(96,165,250,0.35)]"
+        className="relative w-full max-w-lg md:max-w-3xl drop-shadow-[0_0_40px_rgba(96,165,250,0.35)]"
       />
     </motion.div>
   );

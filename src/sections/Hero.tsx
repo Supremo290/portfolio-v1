@@ -30,17 +30,18 @@ function Hero() {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
+          className="md:-translate-x-6 lg:-translate-x-10"
         >
           <motion.span
             variants={itemVariants}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card text-glow-300 text-sm mb-6"
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card text-glow-300 text-base mb-6"
           >
             <FiBarChart2 /> Ready to Analyze
           </motion.span>
 
           <motion.h1
             variants={itemVariants}
-            className="text-5xl md:text-6xl font-extrabold text-white leading-tight text-glow-soft"
+            className="text-6xl md:text-7xl font-extrabold text-white leading-tight text-glow-soft"
           >
             Aspiring Data
             <br />

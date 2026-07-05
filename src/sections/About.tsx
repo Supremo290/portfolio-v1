@@ -17,10 +17,18 @@ function About() {
             transition={{ duration: 0.6 }}
           >
             <p className="text-slate-300 leading-relaxed mb-8">
-              I'm a frontend developer who loves turning ideas into fast,
-              accessible, and visually engaging web experiences. I focus on
-              clean architecture, smooth animation, and building interfaces
-              people enjoy using.
+              I am Robbie Fuggan, an aspiring Data Analyst and AI Engineer
+              with a strong passion for turning data into meaningful insights
+              that help drive better decisions. I enjoy working with SQL,
+              Python, Excel, Power BI, and modern data analytics tools to
+              clean, analyze, and visualize data. I am continuously learning
+              and building hands-on projects to strengthen my analytical and
+              problem-solving skills while preparing for an entry-level
+              career in data analytics and artificial intelligence. Although
+              I have experience in frontend development, my career focus is
+              now centered on data analytics, business intelligence, and AI.
+              I am committed to continuous learning and applying data-driven
+              solutions to solve real-world problems.
             </p>
 
             <h3 className="text-white font-semibold mb-4">Skills &amp; Tools</h3>
