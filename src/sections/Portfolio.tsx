@@ -4,6 +4,7 @@ import { FiAward } from "react-icons/fi";
 import ProjectCard from "../components/ProjectCard";
 import TechCard from "../components/TechCard";
 import PortfolioTabs, { type PortfolioTabId } from "../components/PortfolioTabs";
+import AnimatedSection from "../components/AnimatedSection";
 import { projects } from "../data/projects";
 import { skills } from "../data/skills";
 
@@ -11,7 +12,7 @@ function Portfolio() {
   const [activeTab, setActiveTab] = useState<PortfolioTabId>("projects");
 
   return (
-    <section id="portfolio" className="py-24 px-6">
+    <AnimatedSection id="portfolio" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="text-center mb-12"
@@ -84,7 +85,7 @@ function Portfolio() {
           )}
         </AnimatePresence>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }
 

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FiMail, FiSend } from "react-icons/fi";
 import SectionHeading from "../components/SectionHeading";
 import SocialIcons from "../components/SocialIcons";
+import AnimatedSection from "../components/AnimatedSection";
 
 function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -21,7 +22,7 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 px-6">
+    <AnimatedSection id="contact" className="py-24 px-6">
       <div className="max-w-4xl mx-auto">
         <SectionHeading eyebrow="Get In Touch" title="Contact Me" />
 
@@ -91,7 +92,7 @@ function Contact() {
           </form>
         </motion.div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }
 

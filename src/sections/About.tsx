@@ -10,6 +10,7 @@ import {
 } from "react-icons/fi";
 import SectionHeading from "../components/SectionHeading";
 import Button from "../components/Button";
+import AnimatedSection from "../components/AnimatedSection";
 import formalPicture from "../assets/Formal-Picture.jpg";
 
 const stats = [
@@ -38,7 +39,7 @@ const stats = [
 
 function About() {
   return (
-    <section id="about" className="py-24 px-6">
+    <AnimatedSection id="about" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <SectionHeading eyebrow="About Me" title="Who I Am" />
 
@@ -135,7 +136,7 @@ I am Robbie Fuggan, an aspiring Data Analyst and AI Engineer passionate about tr
           ))}
         </motion.div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }
 
