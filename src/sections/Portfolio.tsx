@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiAward } from "react-icons/fi";
 import ProjectCard from "../components/ProjectCard";
 import TechCard from "../components/TechCard";
+import CertificateCard from "../components/CertificateCard";
 import PortfolioTabs, { type PortfolioTabId } from "../components/PortfolioTabs";
 import AnimatedSection from "../components/AnimatedSection";
 import { projects } from "../data/projects";
 import { skills } from "../data/skills";
+import { certificates } from "../data/certificates";
 
 function Portfolio() {
   const [activeTab, setActiveTab] = useState<PortfolioTabId>("projects");
@@ -60,12 +61,15 @@ function Portfolio() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4 }}
-              className="glass-card rounded-2xl py-20 px-6 text-center"
+              className="grid sm:grid-cols-2 md:grid-cols-3 gap-8"
             >
-              <span className="flex items-center justify-center w-14 h-14 rounded-full bg-primary-600/20 text-glow-300 mx-auto mb-4">
-                <FiAward size={24} />
-              </span>
-              <p className="text-slate-300 text-lg">Certificates coming soon.</p>
+              {certificates.map((certificate, index) => (
+                <CertificateCard
+                  key={certificate.id}
+                  certificate={certificate}
+                  index={index}
+                />
+              ))}
             </motion.div>
           )}
 

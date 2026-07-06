@@ -32,3 +32,13 @@ export interface ExperienceItem {
   period: string;
   description: string;
 }
+
+export interface Certificate {
+  id: string;
+  title: string;
+  issuer: string;
+  issueDate?: string;
+  image: string;
+  viewUrl: string;
+  downloadUrl: string;
+}
