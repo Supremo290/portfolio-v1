@@ -23,7 +23,7 @@ export interface Project {
 
 export interface Skill {
   name: string;
-  icon: IconType;
+  icon: IconType | string;
 }
 
 export interface ExperienceItem {
